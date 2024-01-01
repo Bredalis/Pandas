@@ -15,7 +15,7 @@ print('Metodo para revisar si hay un determinado dato: \n',
 	df.Nombres.isin(['Yulissa', 'Perla']))
 
 print('\nSintaxis basica: \n', df[df['Nombres'] == 'Lucas'])
-print(df.iloc[[0, 1], [0, 2]])
+print('\n', df.iloc[[0, 1], [0, 2]])
 
 # Poner la columna Nombres como index
 

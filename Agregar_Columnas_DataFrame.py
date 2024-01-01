@@ -20,10 +20,12 @@ datos = {
 
 df = pd.DataFrame(datos)
 
+print(df)
+
 df['Profesiones'] = ['Ingeniero', 'Maestro', 'Bombero'] # Sintaxis basica
 df = df.assign(Sueldo = [200, 100, 400]) # Asignando
 df.insert(3, 'Numeros', [52, 67, 80]) # Insertando
 
 # Mostrar df
 
-print(f'DF: \n{df}')
+print(f'\nDF: \n{df}')

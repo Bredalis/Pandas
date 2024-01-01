@@ -24,10 +24,6 @@ df_2 = pd.DataFrame({
 	'Puntuacion': [5, 7, 9, 0]
 })
 
-# Cambiar nombres de columnas en df 2
-
-df_2.columns = ['Colors', 'Punctuation']
-
 # Mostrar datos
 
 print(f'Tamaño: {df_1.shape}')
@@ -35,4 +31,10 @@ print(f'\nEncabezado: \n {df_1.head()}')
 print(f'\nDescripcion: \n {df_1.describe()}')
 
 print(f'\nDF 1: \n{df_1}')
+print(f'\nDF 2: \n{df_2}')
+
+# Cambiar nombres de columnas en df 2
+
+df_2.columns = ['Colors', 'Punctuation']
+
 print(f'\nDF 2: \n{df_2}')

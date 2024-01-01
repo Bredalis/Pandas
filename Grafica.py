@@ -14,5 +14,5 @@ df = pd.DataFrame({
 
 df.plot()
 
-plt.suptitle('Grafica')
+plt.title('Grafica')
 plt.show()
