@@ -3,7 +3,7 @@ import pandas as pd
 
 # DF
 
-url = 'C:/Users/Angelica Gerrero/Desktop/LenguajesDeProgramacion/Datasets/CSV/clientes.csv'
+url = 'C:/Users/Bradalis/Desktop/LenguajesDeProgramacion/Datasets/CSV/clientes.csv'
 datos = pd.read_csv(url)
 
 print('Buscar datos faltantes: \n', datos['nombre'].isnull())
