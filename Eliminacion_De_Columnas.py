@@ -1,7 +1,7 @@
 
 import pandas as pd
 
-ruta = 'C:/Users/Bradalis/Desktop/LenguajesDeProgramacion/Datasets/CSV/Cars/all_bikez_curated.csv'
+ruta = 'C:/Users/Bradalis/Desktop/LenguajesDeProgramacion/Datasets/CSV/all_bikez_curated.csv'
 
 # Crear y mostar df
 
