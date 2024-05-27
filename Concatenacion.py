@@ -1,6 +1,4 @@
 
-# Libreria
-
 import pandas as pd
 
 # DF

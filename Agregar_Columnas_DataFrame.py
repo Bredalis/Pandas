@@ -1,10 +1,8 @@
 
 """
 Diferentes formas de 
-agregar columnas a df
+agregar columnas al df
 """
-
-# Libreria
 
 import pandas as pd
 
@@ -19,7 +17,6 @@ datos = {
 # Creacion de df
 
 df = pd.DataFrame(datos)
-
 print(df)
 
 df["Profesiones"] = ["Ingeniero", "Maestro", "Bombero"] # Sintaxis basica

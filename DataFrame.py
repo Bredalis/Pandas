@@ -4,8 +4,6 @@ Diferentes maneras
 de crear un df
 """
 
-# Libreria
-
 import pandas as pd
 
 # Diccionario para df

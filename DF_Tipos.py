@@ -23,8 +23,8 @@ diccionario = {
 
 # Creacion de los df
 
-df_1 = pd.DataFrame([fila_1, fila_2], columns = columnas) # Filas y columnas
-df_2 = pd.DataFrame(diccionario) # Diccionario
+df_1 = pd.DataFrame([fila_1, fila_2], columns = columnas)
+df_2 = pd.DataFrame(diccionario)
 
 # Zip
 

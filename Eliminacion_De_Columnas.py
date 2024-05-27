@@ -8,7 +8,7 @@ print(f"DF: \n{df.head()}")
 
 print(df.dtypes)
 
-# Eliminacion
+# Eliminacion de este tipo de dato
 
 df = df.select_dtypes(exclude = ["object"])
 print("\nDF sin object: \n", df)

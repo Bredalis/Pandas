@@ -13,7 +13,7 @@ df = pd.DataFrame({
 
 print(f"DF: \n{df}")
 
-# Manipulando valores
+# Pasar los datos a NaN
 
 df["Calificacion"][:2] = np.nan
 
