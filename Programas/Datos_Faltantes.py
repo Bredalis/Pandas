@@ -3,7 +3,7 @@ import pandas as pd
 
 # DF
 
-datos = pd.read_csv("Clientes.csv")
+datos = pd.read_csv("../CSV/Clientes.csv")
 
 print("Buscar datos faltantes: \n", datos["nombre"].isnull())
 print("\nBorrar datos faltantes: \n", datos.dropna())

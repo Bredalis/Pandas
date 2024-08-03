@@ -3,7 +3,7 @@ import pandas as pd
 
 # Crear y mostar df
 
-df = pd.read_csv("All_bikez_curated.csv") 
+df = pd.read_csv("../CSV/All_Bikez_Curated.csv") 
 print(f"DF: \n{df.head()}")
 
 print(df.dtypes)
