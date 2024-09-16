@@ -28,7 +28,7 @@ print(f"\nDF 2: \n{df_2}")
 print(f"\nDF 3: \n{df_3}")
 print(f"\nDF 3 (Poblacion):\n{df_3.Poblacion}")
 
-print(f"\nDF 3 (Mostrar poblacion de RD y Peru): \n", 
+print(f"\nDF 3 (Mostrar población de RD y Peru): \n", 
 	df_3.loc[["RD", "Peru"], ["Poblacion"]])
 
 print(f"\nDF 3 (Mostrar poblacion de RD y Peru): \n", 
