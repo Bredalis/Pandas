@@ -1,18 +1,18 @@
 
 import pandas as pd
 
-# DF
-
+# Crear el DataFrame
 df = pd.DataFrame({
 	"Numeros": [1, 2, 3, 4], 
 	"Letras": ["a", "b", "c", "d"]
 })
 
-print(f"DF: \n{df}")
-print(f"Selecion de posicion de filas: \n{df.iloc[:3]}")
-print("\nOrdenados de forma descendente:\n", 
+# Mostrar información del DataFrame
+print(f"DataFrame completo:\n{df}")
+print(f"\nPrimeras tres filas:\n{df.iloc[:3]}")
+print("\nDataFrame ordenados por 'Numeros' en forma descendente:\n", 
 	df.sort_values("Numeros", ascending = False))
 
-# Devuelve los numeros de esa columna en negativo
-
-print(df["Numeros"].apply(lambda x: -x))
+# Convertir los números a negativos en la columna 'Numeros'
+print("\nConvertir 'Numeros' con valores negativos:\n", 
+	df["Numeros"].apply(lambda x: -x))

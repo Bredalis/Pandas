@@ -1,37 +1,27 @@
 
-"""
-Diferentes maneras 
-de crear un df
-"""
-
 import pandas as pd
 
-# Diccionario para df
-
+# Diccionario de datos para crear el DataFrame
 datos = {
 	"Nombre": ["Perla", "Pedro", "Pedrito"],
 	"Edad": [23, 24, 25],
 	"Pais": ["Puerto Rico", "RD", "Chile"]
 }
 
-# Creacion de los df
-
+# Creación de DataFrame
 df_1 = pd.DataFrame(datos)
 df_2 = pd.DataFrame({
 	"Colores": ["Rojo", "Verde", "Azul", "Naranja"],
-	"Puntuación": [5, 7, 9, 0]
+	"Puntuacion": [5, 7, 9, 0]
 })
 
-# Mostrar datos
+# Mostrar información y contenido de los DataFrames
+print(f"Tamaño de df_1: {df_1.shape}")
+print(f"\nEncabezado de df_1:\n{df_1.head()}")
+print(f"\nDescripción de df_1:\n{df_1.describe()}")
+print(f"\nContenido de df_1:\n{df_1}")
+print(f"\nContenido de df_2:\n{df_2}")
 
-print(f"Tamaño: {df_1.shape}")
-print(f"\nEncabezado: \n {df_1.head()}")
-print(f"\nDescripcion: \n {df_1.describe()}")
-
-print(f"\nDF 1: \n{df_1}")
-print(f"\nDF 2: \n{df_2}")
-
-# Cambiar nombres de columnas en df 2
-
+# Cambiar nombres de columnas en df_2
 df_2.columns = ["Colors", "Punctuation"]
-print(f"\nDF 2: \n{df_2}")
+print(f"\nContenido actualizado de df_2:\n{df_2}")

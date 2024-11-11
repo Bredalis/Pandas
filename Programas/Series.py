@@ -1,9 +1,11 @@
 
 import pandas as pd
 
-# Creacion de una Serie
+# Creación de una Serie
+serie = pd.Series(
+	["Masa", "Peso", "Volumen"], 
+	name = "Componentes de la Materia"
+)
 
-serie = pd.Series(["Masa", "Peso", "Volumen"])
-serie.name = "Componentes de la Materia"
-
-print("Serie: \n", serie)
+# Mostrar la Serie
+print(f"Serie:\n{serie}")

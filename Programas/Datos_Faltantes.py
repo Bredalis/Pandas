@@ -1,29 +1,28 @@
 
 import pandas as pd
 
-# DF
-
+# Cargar el DataFrame
 datos = pd.read_csv("../CSV/Clientes.csv")
 
-print("Buscar datos faltantes: \n", datos["nombre"].isnull())
-print("\nBorrar datos faltantes: \n", datos.dropna())
+# Manejo de datos faltantes
+print("Datos faltantes en la columna 'nombre':\n", datos["nombre"].isnull())
+print("\nDatos sin valores faltantes:\n", datos.dropna())
 
+# Eliminar filas con NaN en columnas específicas
 datos.dropna(subset = ["nombre", "ingreso"], inplace = True)
-print(datos)
+print("\nDatos después de eliminar NaN en 'nombre' y 'ingreso':\n", datos)
 
-# Valores para sustitur los datos en NaN
-
+# Valores para sustituir NaN
 valores_para_sustituir = {
-	"nombre": "Desconocido",
-	"edad": 18,
-	"ingreso": 10000
+    "nombre": "Desconocido",
+    "edad": 18,
+    "ingreso": 10000
 }
 
-print("\nDF con los datos NaN sustituidos: \n", 
-	datos.fillna(value = valores_para_sustituir))
+# Sustituir NaN en el DataFrame
+print("\nDataFrame con NaN sustituidos:\n", datos.fillna(value = valores_para_sustituir))
 
-# Mostrar datos
-
-print("\nPromedio:", datos["ingreso"].mean())
-print("Media:", datos["ingreso"].median())
-print("Moda:", datos["ingreso"].mode())
+# Mostrar estadísticas de la columna 'ingreso'
+print("\nPromedio de ingreso:", datos["ingreso"].mean())
+print("Mediana de ingreso:", datos["ingreso"].median())
+print("Moda de ingreso:", datos["ingreso"].mode())
