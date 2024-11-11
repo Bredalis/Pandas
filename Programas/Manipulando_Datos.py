@@ -1,21 +1,21 @@
 
-# Librerías
-
 import pandas as pd
 import numpy as np
 
-# DF
-
+# Crear el DataFrame
 df = pd.DataFrame({	
-	"Frutas": ["Sandia", "Aguacate", "Manzana", "Guineo"],
+	"Frutas": ["Sandía", "Aguacate", "Manzana", "Guineo"],
 	"Calificacion": [10, 2, 7, 9]
 })
 
-print(f"DF: \n{df}")
+print(f"DataFrame original:\n{df}")
 
-# Pasar los datos a NaN
+# Asignar los valores NaN a los primeros dos valores en la columna 'Calificacion'
+df.loc[:1, "Calificacion"] = np.nan
 
-df["Calificacion"][:2] = np.nan
+print(f"\nDataFrame con valores NaN:\n{df}")
 
-print(f"\nSustitucion de valores: \n{df["Calificacion"].fillna(1)}")
-print(f"\nDF: \n{df.head()}")
+# Rellenar los valores NaN con 1 en 'Calificacion'
+df["Calificacion"] = df["Calificacion"].fillna(1) 
+
+print(f"\nDataFrame con los valores NaN sustituidos:\n{df}")

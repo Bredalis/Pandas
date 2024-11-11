@@ -1,14 +1,12 @@
 
 import pandas as pd
 
-# Crear y mostar df
-
+# Cargar el DataFrame y mostar las primeras filas
 df = pd.read_csv("../CSV/All_Bikez_Curated.csv") 
-print(f"DF: \n{df.head()}")
+print(f"Primeras filas del DataFrame:\n{df.head()}")
 
-print(df.dtypes)
+print(f"\nTipos de datos en el DataFrame:\n{df.dtypes}")
 
-# Eliminacion de este tipo de dato
-
+# Eliminar columnas de tipo 'object' y mostrar el resultado
 df = df.select_dtypes(exclude = ["object"])
-print("\nDF sin object: \n", df)
+print(f"\nDataFrame sin columnas de tipo 'object':\n{df}")
